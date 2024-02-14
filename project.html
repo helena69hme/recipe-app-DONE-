@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Recipes</title>
+
+    <link
+      rel="stylesheet"
+      href="project.css"
+    />
+  </head>
+  <body
+    id="body"
+    class="p-5"
+  >
+    <!-- class="pt-10 pb-5 pl-2 text-2xl font-bold" -->
+    <h1>Recipes:</h1>
+
+    <!-- class="w-full text-red-900 text-xl h-14 border-4 b-black-900 p-4 rounded-full" -->
+    <input
+      type="search"
+      id="search"
+      placeholder="Search"
+    />
+
+    <form
+      id="recipeform"
+      action="#"
+    >
+      <input
+        type="text"
+        id="title"
+        placeholder="Title"
+      />
+      <input
+        type="text"
+        id="ingredients"
+        placeholder="Ingredients"
+      />
+      <textarea
+        type="text"
+        id="instructions"
+        placeholder="Instructions"
+        rows="5"
+      ></textarea>
+
+      <input
+        type="file"
+        id="image"
+      />
+      <input
+        type="number"
+        id="cookingTime"
+        placeholder="cookingTime (minutes)"
+        min="1"
+      />
+      <div id="difficultyDiv">
+        <span>Easy</span>
+        <input
+          type="radio"
+          name="difficulty"
+          id="difficulty"
+          value="easy"
+          placeholder="Easy"
+          checked
+        />
+        <span>Medium</span>
+        <input
+          type="radio"
+          name="difficulty"
+          id="difficulty"
+          value="medium"
+          placeholder="Medium"
+        />
+        <span>Difficult</span>
+        <input
+          type="radio"
+          name="difficulty"
+          id="difficulty"
+          value="difficult"
+          placeholder="Difficult"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="data.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
