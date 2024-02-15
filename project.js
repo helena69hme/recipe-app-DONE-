@@ -57,7 +57,7 @@ document.getElementById('recipeform').addEventListener('submit', (event) => {
    // If not ingredients
    if (!ingredients) {
     document.getElementById('ingredients').style.border = '4px solid red'
-    document.getElementById('ingredients').placeholder = 'Name is required'
+    document.getElementById('ingredients').placeholder = 'ingredients is required'
     document.getElementById('ingredients').focus()
     return
   }
@@ -67,7 +67,7 @@ document.getElementById('recipeform').addEventListener('submit', (event) => {
   // If not instructions
   if (!instructions) {
     document.getElementById('instructions').style.border = '4px solid red'
-    document.getElementById('instructions').placeholder = 'Name is required'
+    document.getElementById('instructions').placeholder = 'instructions is required'
     document.getElementById('instructions').focus()
     return
   }
@@ -77,7 +77,7 @@ document.getElementById('recipeform').addEventListener('submit', (event) => {
    // If not cookingTime
    if (!cookingTime) {
     document.getElementById('cookingTime').style.border = '4px solid red'
-    document.getElementById('cookingTime').placeholder = 'Name is required'
+    document.getElementById('cookingTime').placeholder = 'cookingTime is required'
     document.getElementById('cookingTime').focus()
     return
   }
